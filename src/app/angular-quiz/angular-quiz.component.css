@@ -1,0 +1,35 @@
+.angular-quiz {
+    width: 975px;
+    margin: 100px auto 0;
+}
+
+.question-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results {
+    .mat-mdc-card-content {
+        padding: 16px;
+    }
+}
+
+.congratulations {
+    justify-content: center;
+}
+
+.results-info {
+    text-align: center;
+}
+
+.results-info-message {
+    padding-bottom: 16px;
+}

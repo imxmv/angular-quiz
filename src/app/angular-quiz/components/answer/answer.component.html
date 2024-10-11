@@ -1,0 +1,11 @@
+<button mat-stroked-button [ngClass]="{
+        'answer-button': true,
+        'correct-answer-button': isCorrectAnswer(),
+        'wrong-answer-button': isWrongAnswer()
+    }"
+        [disabled]="isButtonDisabled()"
+        (click)="quizService.selectAnswer(answerText())">
+    {{ answerText() }}
+</button>
+
+

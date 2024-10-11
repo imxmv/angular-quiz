@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What is the purpose of NgZone?",
+    "incorrectAnswers": [
+      "Manage HTTP requests",
+      "Handle lifecycle events",
+      "Provide dependency injection"
+    ],
+    "correctAnswer": "Manage change detection outside zone"
+  },
+  {
+    "question": "How to optimize *ngFor with large datasets?",
+    "incorrectAnswers": [
+      "Use ngIf with ngFor",
+      "Enable ChangeDetectionStrategy.Default",
+      "Use async pipe"
+    ],
+    "correctAnswer": "Use trackBy with ngFor"
+  },
+  {
+    "question": "What does Angular’s Injector service do?",
+    "incorrectAnswers": [
+      "Inject services globally",
+      "Handle HTTP communication",
+      "Provide change detection"
+    ],
+    "correctAnswer": "Provide and instantiate dependencies"
+  },
+  {
+    "question": "Which is true about Angular modules?",
+    "incorrectAnswers": [
+      "Must export at least one component",
+      "Cannot import other modules",
+      "A module can be re-imported"
+    ],
+    "correctAnswer": "Can be lazy-loaded"
+  },
+  {
+    "question": "What is RouterModule.forRoot() used for?",
+    "incorrectAnswers": [
+      "Feature module routing",
+      "Creating child routes",
+      "Global service declaration"
+    ],
+    "correctAnswer": "Root route configuration"
+  },
+  {
+    "question": "How to provide a service for a module?",
+    "incorrectAnswers": [
+      "In the component's providers array",
+      "Import service in component",
+      "Use RouterModule.forRoot"
+    ],
+    "correctAnswer": "In the module's providers array"
+  },
+  {
+    "question": "What is a pure pipe in Angular?",
+    "incorrectAnswers": [
+      "Handles async operations",
+      "Triggers on DOM events",
+      "Manually invoked by developer"
+    ],
+    "correctAnswer": "Executes when inputs change"
+  },
+  {
+    "question": "What does ChangeDetectionStrategy.OnPush do?",
+    "incorrectAnswers": [
+      "Runs after every event",
+      "Disables change detection",
+      "Runs in background mode"
+    ],
+    "correctAnswer": "Detects input reference changes"
+  },
+  {
+    "question": "How to share data between sibling components?",
+    "incorrectAnswers": [
+      "Use @ViewChild",
+      "Two-way data binding",
+      "Service with providedIn: 'root'"
+    ],
+    "correctAnswer": "Use shared service"
+  },
+  {
+    "question": "What is a benefit of AOT compilation?",
+    "incorrectAnswers": [
+      "Reduces bundle size",
+      "Allows runtime template compilation",
+      "No need for tree-shaking"
+    ],
+    "correctAnswer": "Detects template errors at build"
+  }
+]

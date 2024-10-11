@@ -1,0 +1,19 @@
+<div class="question">
+    <mat-card appearance="outlined">
+        <mat-card-header>
+            <mat-card-title>{{ quizService.currentQuestion().question }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-grid-list cols="2" rowHeight="6:1">
+                @for (currentQuestionAnswer of quizService.currentQuestionAnswers();
+                    track $index) {
+                    <mat-grid-tile>
+                        <angular-quiz-answer
+                            [answerText]="currentQuestionAnswer"
+                        />
+                    </mat-grid-tile>
+                }
+            </mat-grid-list>
+        </mat-card-content>
+    </mat-card>
+</div>

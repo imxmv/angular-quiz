@@ -1,0 +1,11 @@
+.answer-button {
+    width: 340px;
+}
+
+.correct-answer-button {
+    color: #1ea55b;
+}
+
+.wrong-answer-button {
+    color: #ba1a1a;
+}

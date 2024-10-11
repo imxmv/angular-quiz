@@ -1,0 +1,37 @@
+<div class="angular-quiz">
+    @if (quizService.showResults()) {
+        <div class="results">
+            <mat-card appearance="outlined">
+                <mat-card-header class="congratulations">
+                    <mat-card-title>Congratulations!</mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="results-info">
+                    <div class="results-info-message">
+                        <div>You have completed the quiz.</div>
+                        <div>
+                            You've got {{ quizService.correctAnswersCount() }} of
+                            {{ quizService.questions().length }} right.
+                        </div>
+                    </div>
+                    <button mat-button (click)="quizService.restart()">Restart</button>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    }
+
+    @if (!quizService.showResults() && quizService.questions().length > 0) {
+        <div>
+            <div class="question-number">
+                <p>Question {{ quizService.currentQuestionIndex() + 1 }}/{{
+                        quizService.questions().length }}</p>
+            </div>
+            <angular-quiz-question/>
+            <div class="next-button">
+                <button mat-flat-button [disabled]="!quizService.currentAnswer()" (click)="quizService.goToNextQuestion()">
+                    Next question
+                    <mat-icon>arrow_forward</mat-icon>
+                </button>
+            </div>
+        </div>
+    }
+</div>
